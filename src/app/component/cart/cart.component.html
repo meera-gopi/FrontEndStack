@@ -1,0 +1,66 @@
+
+<ng-container *ngIf="products.length!=0">
+
+    <h4 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;"> Your Cart </h4>
+<div class="container">
+    <div class="card-table">
+        <div class="cartitems">
+            
+            <div class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sl#</th>
+                        <th>ProdId</th>
+                        <th>ProdName</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr *ngFor="let item of products; let i = index ">
+                        <td>{{i+1}}</td>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>1</td>
+                        <td>{{item.price}}</td>
+                        <td><button class="btn btn-primary" style="color: brown;" (click)="deleteCartItem(item)">Remove</button></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"></td>
+                        
+                        <td><button routerLink="/products" class="btn btn-primary">Add More</button></td>
+                        <td><button routerLink="/checkout" class="btn btn-success" (click)="setAmount(grandTotal)">Checkout</button></td>
+                        <td><strong>Grand Total : Rs{{grandTotal}}</strong></td>
+                    </tr>
+                    
+                </tbody>
+            </div>
+        </div>
+    </div>
+</div>
+
+</ng-container>
+
+<ng-container *ngIf="products.length==0">
+    <div class="container">
+        <div class="card">
+            <div class="card-title">My Cart</div>
+            
+    
+        </div>
+    
+        <div class="center">
+            <h5>Your Cart is Empty</h5>
+            <br>
+            <button routerLink="/products" class="btn btn-primary" >Products List</button>
+    
+        </div>
+          
+    </div>
+</ng-container>
+
+
+
+

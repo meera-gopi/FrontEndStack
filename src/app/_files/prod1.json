@@ -1,0 +1,84 @@
+[{
+    "id":1,
+    "type":"G",
+    "name":"Wheat",
+    "price":50,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":2,
+    "type":"G",
+    "name":"Rice",
+    "price":40,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":3,
+    "type":"G",
+    "name":"Sugar",
+    "price":30,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":4,
+    "type":"FV",
+    "name":"Apple",
+    "price":150,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":5,
+    "type":"FV",
+    "name":"Mango",
+    "price":90,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":6,
+    "type":"FV",
+    "name":"Orange",
+    "price":90,
+    "pic":"assets/images/orange.png"
+},
+{
+    "id":7,
+    "type":"FV",
+    "name":"Tomato",
+    "price":30,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":8,
+    "type":"FV",
+    "name":"Carrot",
+    "price":50,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":9,
+    "type":"FV",
+    "name":"Spinach",
+    "price":30,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":10,
+    "type":"M",
+    "name":"PotatoChips",
+    "price":100,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":11,
+    "type":"M",
+    "name":"Cookies",
+    "price":50,
+    "pic":"assets/images/picna.png"
+},
+{
+    "id":12,
+    "type":"M",
+    "name":"ChocolateBar",
+    "price":50,
+    "pic":"assets/images/picna.png"
+}]

@@ -1,0 +1,40 @@
+<ng-container *ngIf="! payment">
+
+<div class="container">
+    <h3>Payment GateWay</h3>
+
+
+<div class="center">
+    <h4> Total Amount to be Paid is Rs {{amount}}</h4>
+    <p> Select one of the option from below and select proceed</p>
+    <div class="form-check">
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Cash/Card On Delivery
+            <label class="form-check-label" for="radio1"></label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Online Payment
+            <label class="form-check-label" for="radio2"></label>
+          </div>
+    </div>
+
+    <div class="btn btn-success" (click)="setPayment()">Procced</div>
+</div>
+
+</div>
+
+</ng-container>
+
+<ng-container *ngIf="payment">
+    <div class="container">
+    <h2> Thank you for using KitchenStory, </h2>
+    <p>order will be delivered to the address provided in 2 hours !!</p>  
+   
+    <br>
+    <br>
+
+    <div class="btn btn-primary" routerLink="/products">HOME</div>
+
+    </div>
+</ng-container>
+
