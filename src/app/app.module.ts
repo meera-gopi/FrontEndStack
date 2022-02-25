@@ -7,6 +7,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
 import { CheckoutComponent } from './component/checkout/checkout.component';
+import { FilterPipe } from './dist/filter.pipe';
+import { FormsModule  , ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,12 +17,15 @@ import { CheckoutComponent } from './component/checkout/checkout.component';
     HeaderComponent,
     CartComponent,
     ProductsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    FilterPipe,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

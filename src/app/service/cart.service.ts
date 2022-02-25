@@ -10,6 +10,8 @@ export class CartService {
 
   public productList = new BehaviorSubject<any>([]);
 
+  public search = new BehaviorSubject<string>("");
+
   public amount !:any;
 
   constructor() { }

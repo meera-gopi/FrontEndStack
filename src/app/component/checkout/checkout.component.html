@@ -1,10 +1,11 @@
 <ng-container *ngIf="! payment">
 
-<div class="container">
-    <h3>Payment GateWay</h3>
+
 
 
 <div class="center">
+    <h2> Please Choose the Payment Method and Proceed </h2>
+    <hr>
     <h4> Total Amount to be Paid is Rs {{amount}}</h4>
     <p> Select one of the option from below and select proceed</p>
     <div class="form-check">
@@ -18,12 +19,14 @@
           </div>
     </div>
 
-    <div class="btn btn-success" (click)="setPayment()">Procced</div>
+    <div class="btn btn-success" (click)="setPayment()">Procced to Payment </div>
 </div>
 
-</div>
+
 
 </ng-container>
+
+
 
 <ng-container *ngIf="payment">
     <div class="container">

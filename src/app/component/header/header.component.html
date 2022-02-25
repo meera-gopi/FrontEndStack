@@ -1,11 +1,16 @@
 <header>
+
+
   <div class="navbar " style="background-color: chartreuse;color:blue">
-      <!--<input type="text" class="form-control" placeholder="Search Product">
+
+      <h3>Kitchen Story</h3>
+
+      <input type="text" class="form-control" [(ngModel)]="searchterm" (keyup)="search($event)" placeholder="Search Product">
       <div class="form-group">
      </div>
-     <span class="fas fa-search search-icon"></span>--> 
+     <span class="fas fa-search search-icon"></span>
 
-     <h3>Kitchen Story</h3>
+     
 
      <button routerLink="cart" class="btn btn-primary">
       <i style="font-size: 25px" class="fas fa-shopping-cart"></i>
